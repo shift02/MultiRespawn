@@ -135,6 +135,8 @@ jar {
             "MixinConfigs": "multirespawn.mixins.json"
         ])
     }
+
+    appendix = '1.16.4'
 }
 
 // Example configuration to allow publishing using the maven-publish task
