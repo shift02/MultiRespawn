@@ -31,14 +31,14 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("multirespawn")
-public class ExampleMod
+public class MultiRespawn
 {
     private final static ResourceLocation KYE = new ResourceLocation("multirespawn", "respawnplayerdata");
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExampleMod() {
+    public MultiRespawn() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -90,8 +90,6 @@ public class ExampleMod
     }
 
 
-
-
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
@@ -103,8 +101,6 @@ public class ExampleMod
 
 
         }
-
-
 
     }
 
