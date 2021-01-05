@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "shift.multirespawn.asm.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "multirespawn.refmap.json",
+  "mixins": [
+    "MixinDeathScreen"
+  ],
+  "minVersion": "0.8"
+}
